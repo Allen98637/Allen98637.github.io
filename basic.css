@@ -28,11 +28,15 @@
     text-align:center;
     line-height: 50px;
     box-sizing: border-box;
-    border:#FFFFFF 1px solid;
+    border-top:#FFFFFF 1px solid;
 }
-a.menuLink:link {color:#ffffff; text-decoration:none;}
-a.menuLink:hover {font-size:20; color:#00FFFF; text-decoration:none;}
-a.menuLink:active {color:#FFFFFF; text-decoration:none;}
+
+.chosenItem{
+    border-top:#FFFFFF 5px solid;
+}
+
+a.menuLink:link,a.menuLink:visited {color:#ffffff; text-decoration:none;}
+a.menuLink:hover, a.chosen:link, a.chosen.visited, a.chosen:hover {font-size:20; color:#00FFFF; text-decoration:none;}
 
 #menu0{
     transform: translateX(-314px);
