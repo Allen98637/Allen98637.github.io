@@ -14,8 +14,18 @@ body {
 }
 
 .ber{
+    position:relative;
+    top:80px;
+    left:10%;
     font-family: 'ber-bold' ;
-    color:#ffffff
+    color:#ffffff;
+    max-width:80%;
+    text-align:center;
+}
+
+footer{
+    position:relative;
+    top:80px;
 }
 
 .menuBG{
