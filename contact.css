@@ -1,0 +1,35 @@
+.textBG{
+    position: absolute;
+    top:30%;             
+    left:15%;
+    width:70%;
+    height:40%;
+    background-color: #00000077;
+    z-index: -1;
+}
+.context{
+    position:absolute;
+    top:30%;             
+    left:15%;
+    width:70%;
+    height:40%;
+    text-align:center;
+}
+.contaxt{
+    position:relative;
+    left:0%;
+    max-width: 100%;
+}
+h3.contaxt{
+    font-size:30px;
+}
+p.contaxt{
+    font-size:20px;
+}
+
+footer{
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform: translateX(-170px);
+}

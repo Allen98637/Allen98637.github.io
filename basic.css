@@ -16,10 +16,10 @@ body {
 .ber{
     position:relative;
     top:80px;
-    left:10%;
+    left:15%;
     font-family: 'ber-bold' ;
     color:#ffffff;
-    max-width:80%;
+    max-width:70%;
     text-align:center;
 }
 
@@ -41,23 +41,30 @@ footer{
 .menuItem{
     list-style-type:none;
     position: fixed; 
-    top: 10px;             
+    top: 14px;             
     left: 50%;
     font-size:20px;
     letter-spacing:5px; 
     text-align:center;
-    line-height: 50px;
+    line-height: 54px;
     box-sizing: border-box;
     border-top:#FFFFFF 1px solid;
     z-index: 100;
 }
-
-.chosenItem{
+.menuItem:hover{
     border-top:#FFFFFF 5px solid;
 }
 
+.chosenItem{
+    border-top:#FFFFFF 5px solid;
+    line-height: 50px;
+}
+
+a:link,a:visited {color:#ff00ff; text-decoration:none;}
+a:hover {color:#ff7700; text-decoration:none;}
 a.menuLink:link,a.menuLink:visited {color:#ffffff; text-decoration:none;}
-a.menuLink:hover, a.chosen:link, a.chosen:visited, a.chosen:hover {color:#00FFFF; text-decoration:none;}
+a.chosen:link, a.chosen:visited{color:#00FF00; text-decoration:none;}
+a.menuLink:hover, a.chosen:hover {color:#00FFFF; text-decoration:none;}
 
 #menu0{
     transform: translateX(-314px);
