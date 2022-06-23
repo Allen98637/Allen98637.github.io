@@ -36,7 +36,7 @@
 }
 
 a.menuLink:link,a.menuLink:visited {color:#ffffff; text-decoration:none;}
-a.menuLink:hover, a.chosen:link, a.chosen.visited, a.chosen:hover {font-size:20; color:#00FFFF; text-decoration:none;}
+a.menuLink:hover, a.chosen:link, a.chosen:visited, a.chosen:hover {color:#00FFFF; text-decoration:none;}
 
 #menu0{
     transform: translateX(-314px);
