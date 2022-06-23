@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'ber-bold';
+    src: url('fonts/ber-bold.woff') format("woff"),
+           url('fonts/ber-bold.ttf') format("truetype"),
+           url('fonts/ber-bold.eot') format("embedded-opentype");
+}
+
+.ber{
+    font-family: 'ber-bold' ;
+}
+
+.menuBG{
+    position: fixed;
+    top:0;             
+    left:0;
+    width:100%;
+    height:70px;
+    background-color: #000000;
+}
+
+.menuItem{
+    list-style-type:none;
+    position: fixed; 
+    top: 10px;             
+    left: 50%;
+    font-size:20px;
+    letter-spacing:5px; 
+    text-align:center;
+    line-height: 50px;
+    box-sizing: border-box;
+    border:#FFFFFF 1px solid;
+}
+a.menuLink:link {color:#ffffff; text-decoration:none;}
+a.menuLink:hover {font-size:20; color:#00FFFF; text-decoration:none;}
+a.menuLink:active {color:#FFFFFF; text-decoration:none;}
+
+#menu0{
+    transform: translateX(-314px);
+    width:128px;
+    height: 50px;
+}
+#menu1{
+    transform: translateX(-181px);
+    width:128px;
+    height: 50px;
+}
+#menu2{
+    transform: translateX(-48px);
+    width:188px;
+    height: 50px;
+}
+#menu3{
+    transform: translateX(146px);
+    width:168px;
+    height: 50px;
+}
