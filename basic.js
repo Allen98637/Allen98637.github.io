@@ -2,9 +2,6 @@ $(document).ready(function(){
     $(document).pjax('a', '#container');
 });
 
-
-const menu = document.getElementsByClassName("menuItem");
-
 const menu0 = document.getElementById("menu0");
 var menu0Event = null;
 if(menu0.className != "menuItem chosenItem"){

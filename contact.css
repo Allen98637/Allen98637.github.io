@@ -31,5 +31,5 @@ footer{
     position:absolute;
     top:70%;
     left:50%;
-    transform: translateX(-170px);
+    transform: translateX(-50%);
 }

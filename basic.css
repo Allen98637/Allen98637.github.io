@@ -24,8 +24,10 @@ body {
 }
 
 footer{
-    position:relative;
-    top:80px;
+    position:absolute;
+    top:100%;
+    left:50%;
+    transform: translateX(-50%);
 }
 
 .menuBG{
