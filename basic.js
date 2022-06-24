@@ -1,0 +1,1 @@
+$(document).pjax('a', '#container');
