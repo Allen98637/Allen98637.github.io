@@ -51,9 +51,6 @@ footer{
     border-top:#FFFFFF 1px solid;
     z-index: 100;
 }
-.menuItem:hover{
-    border-top:#FFFFFF 5px solid;
-}
 
 .chosenItem{
     border-top:#FFFFFF 5px solid;

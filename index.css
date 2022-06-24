@@ -6,3 +6,7 @@ p.ber{
     font-size: 40px;
     color:#aa0044;
 }
+
+#intro{
+    opacity:0;
+}
