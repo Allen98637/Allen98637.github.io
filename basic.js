@@ -1,1 +1,3 @@
-$(document).pjax('a', '#container');
+$(document).ready(function(){
+    $(document).pjax('a', '#container');
+});
