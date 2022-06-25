@@ -21,6 +21,7 @@
     position:relative;
     left:0%;
     max-width: 100%;
+    opacity:0;
 }
 h3.contaxt{
     font-size:30px;

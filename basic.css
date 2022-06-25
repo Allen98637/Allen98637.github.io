@@ -24,6 +24,7 @@ body {
 }
 
 footer{
+    opacity:0;
     position:relative;
     top:80px;
     left:50%;
