@@ -6,9 +6,9 @@ const intext = document.getElementById("intext");
 const intext2 = document.getElementById("intext2");
 
 var op = 0;
-var k = -100;
+var k = 100;
 function frame() {
-    if(op < 0.95){
+    if(k > 5){
         op += 0.02;
         k *= 0.9;
     }
@@ -17,8 +17,8 @@ function frame() {
         k = 0;
     }
     intro.style.opacity = op;
-    intext.style.top = k+"px";
-    intext2.style.top = k*2 +"px";
+    intext.style.top = (80-k)+"px";
+    intext2.style.top = (80-k*2) +"px";
     if(op == 1){
         clearInterval(introa);
     }

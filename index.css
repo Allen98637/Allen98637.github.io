@@ -1,4 +1,13 @@
+@font-face {
+    font-family: 'mokoto';
+    src: url('fonts/mokoto.woff') format("woff"),
+           url('fonts/mokoto.ttf') format("truetype"),
+           url('fonts/mokoto.eot') format("embedded-opentype");
+}
+
+
 h1.ber{
+    font-family: 'mokoto', sans-serif;
     font-size: 100px;
     color:#aa0000;
 }

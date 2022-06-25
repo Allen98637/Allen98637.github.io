@@ -17,15 +17,15 @@ body {
     position:relative;
     top:80px;
     left:15%;
-    font-family: 'ber-bold' ;
+    font-family: 'ber-bold', sans-serif;;
     color:#ffffff;
     max-width:70%;
     text-align:center;
 }
 
 footer{
-    position:absolute;
-    top:100%;
+    position:relative;
+    top:80px;
     left:50%;
     transform: translateX(-50%);
 }
@@ -62,7 +62,7 @@ footer{
 a:link,a:visited {color:#ff00ff; text-decoration:none;}
 a:hover {color:#ff7700; text-decoration:none;}
 a.menuLink:link,a.menuLink:visited {color:#ffffff; text-decoration:none;}
-a.chosen:link, a.chosen:visited{color:#00FF00; text-decoration:none;}
+.chosen, a.chosen:link, a.chosen:visited{color:#00FF00; text-decoration:none;}
 a.menuLink:hover, a.chosen:hover {color:#00FFFF; text-decoration:none;}
 
 #menu0{
@@ -80,6 +80,7 @@ a.menuLink:hover, a.chosen:hover {color:#00FFFF; text-decoration:none;}
     width:188px;
     height: 50px;
 }
+#menu2:hover{cursor: default;}
 #menu3{
     transform: translateX(146px);
     width:168px;

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 .textBG{
     position: absolute;
     top:30%;             
@@ -33,3 +35,8 @@ footer{
     left:50%;
     transform: translateX(-50%);
 }
+
+
+.mail{font-family: 'Roboto Mono', monospace sans-serif;}
+.mail:link, .mail:visited{color:red;}
+.mail:hover{color:#00ff00};
