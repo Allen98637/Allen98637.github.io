@@ -3,7 +3,7 @@ const data =[
         "name":"Ninkmi",
         "img":"ninkmi.png",
         "color":[0,0,0],
-        "font":[255,255,255],
+        "font":[255,255,0],
         "size":60,
         "href":""
     },
