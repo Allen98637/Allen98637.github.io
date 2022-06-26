@@ -2,10 +2,31 @@ $(document).ready(function(){
     $(document).pjax('a', '#container');
 });
 
-document.addEventListener("DOMContentLoaded", function(event) {
-    
-    const menu0 = document.getElementById("menu0");
-    var menu0Event = null;
+
+var menu0;
+var menu0Event = null;
+
+var menu1;
+var menu1Event = null;
+
+var menu2;
+var menu2subEvent;
+var menu2sub;
+var menu2Event = null;
+var menu2subScroll = true;
+
+var menu3Event = null;
+var menu3;
+
+var introa;
+var icons
+
+var menu2sub0;
+var menu2sub1;
+var menu2sub2;
+
+window.addEventListener("load",function(){
+    menu0 = document.getElementById("menu0");
     if(menu0.className != "menuItem chosenItem"){
         menu0.style.borderTopWidth = "1px";
         menu0.addEventListener('mouseover', function () {
@@ -23,8 +44,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }, 20);
         });
     }
-    const menu1 = document.getElementById("menu1");
-    var menu1Event = null;
+    menu1 = document.getElementById("menu1");
     if(menu1.className != "menuItem chosenItem"){
         menu1.style.borderTopWidth = "1px";
         menu1.addEventListener('mouseover', function () {
@@ -42,16 +62,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }, 20);
         });
     }
-    const menu2 = document.getElementById("menu2");
-    var menu2Event = null;
-    var menu2sub = document.getElementById("menu2sub");
-    var menu2subEvent;
-    var menu2subScroll = true;
+    menu2 = document.getElementById("menu2");
+    menu2sub = document.getElementById("menu2sub");
     if(menu2.className != "menuItem chosenItem"){
         menu2.style.borderTopWidth = "1px";
     }
-    const menu3 = document.getElementById("menu3");
-    var menu3Event = null;
+    menu3 = document.getElementById("menu3");
     if(menu3.className != "menuItem chosenItem"){
         menu3.style.borderTopWidth = "1px";
         menu3.addEventListener('mouseover', function () {
@@ -70,8 +86,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
     }
 
-    var introa = setInterval(frame, 20);
-    const icons = document.querySelector('footer');
+    introa = setInterval(frame, 20);
+    icons = document.querySelector('footer');
 
     var op = 0;
     function frame() {
@@ -88,9 +104,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
 
-    const menu2sub0 = document.getElementById("menu2sub0");
-    const menu2sub1 = document.getElementById("menu2sub1");
-    const menu2sub2 = document.getElementById("menu2sub2");
+    menu2sub0 = document.getElementById("menu2sub0");
+    menu2sub1 = document.getElementById("menu2sub1");
+    menu2sub2 = document.getElementById("menu2sub2");
 
     menu2.onmouseover = function(){
         menu2sub.style.display = "block";
@@ -162,23 +178,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
             menu2subScroll = true;
         }
     };
+},false);
 
-    var menu2subY = 0;
-    function menu2subGo(){
-        menu2subY = menu2subY + (170 - menu2subY) * 0.2;
-        menu2sub.style.top = menu2subY - 110 + "px";
-        if(menu2subY >= 166){
-            menu2sub.style.top = "60px";
-            clearInterval(menu2subEvent);
-        }
+var menu2subY = 0;
+function menu2subGo(){
+    menu2subY = menu2subY + (170 - menu2subY) * 0.2;
+    menu2sub.style.top = menu2subY - 110 + "px";
+    if(menu2subY >= 166){
+        menu2sub.style.top = "60px";
+        clearInterval(menu2subEvent);
     }
-    function menu2subBack(){
-        menu2subY *= 0.8;
-        menu2sub.style.top = menu2subY - 110 + "px";
-        if(menu2subY < 5){
-            menu2sub.style.top = "-110px";
-            menu2sub.style.display = "none";
-            clearInterval(menu2subEvent);
-        }
+}
+function menu2subBack(){
+    menu2subY *= 0.8;
+    menu2sub.style.top = menu2subY - 110 + "px";
+    if(menu2subY < 5){
+        menu2sub.style.top = "-110px";
+        menu2sub.style.display = "none";
+        clearInterval(menu2subEvent);
     }
-});
+}
