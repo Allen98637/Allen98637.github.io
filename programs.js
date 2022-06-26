@@ -41,6 +41,7 @@ function init(){
         newP.textContent = data[i]["desc"];
         newP.style.color = "rgba("+data[i]["font"][0]+","+data[i]["font"][1]+","+data[i]["font"][2]+",1)";
         newP.style.fontSize = "20px";
+        newP.style.lineHeight= "30px";
         newP.style.top = "110px";
         newP.style.height = "90px";
         newP.style.justifyContent = "center";
@@ -94,12 +95,13 @@ function fadeIn(){
                 if(dex != -1){
                     clearInterval(Events[dex]);
                     Events[dex] = setInterval(function(){
-                        prog[dex] = 1 - (1 - prog[dex]) * 0.6;
+                        prog[dex] += 0.1;
                         var r = data[dex]["color"][0] + (data[dex]["scolor"][0] - data[dex]["color"][0]) * prog[dex];
                         var g = data[dex]["color"][1] + (data[dex]["scolor"][1] - data[dex]["color"][1]) * prog[dex];
                         var b = data[dex]["color"][2] + (data[dex]["scolor"][2] - data[dex]["color"][2]) * prog[dex];
                         daD[dex].style.backgroundColor = "rgba("+r+","+g+","+b+",1)";;
-                        if(prog[dex] >= 0.9){
+                        if(prog[dex] >= 1){
+                            prog[dex] = 1;
                             daD[dex].style.backgroundColor = "rgba("+data[dex]["scolor"][0]+","+data[dex]["scolor"][1]+","+data[dex]["scolor"][2]+",1)";;
                             clearInterval(Events[dex]);
                         }
@@ -115,12 +117,13 @@ function fadeIn(){
                 if(dex != -1){
                     clearInterval(Events[dex]);
                     Events[dex] = setInterval(function(){
-                        prog[dex] *= 0.8;
+                        prog[dex] -= 0.1;
                         var r = data[dex]["color"][0] + (data[dex]["scolor"][0] - data[dex]["color"][0]) * prog[dex];
                         var g = data[dex]["color"][1] + (data[dex]["scolor"][1] - data[dex]["color"][1]) * prog[dex];
                         var b = data[dex]["color"][2] + (data[dex]["scolor"][2] - data[dex]["color"][2]) * prog[dex];
                         daD[dex].style.backgroundColor = "rgba("+r+","+g+","+b+",1)";;
-                        if(prog[dex] <= 0.1){
+                        if(prog[dex] <= 0){
+                            prog[dex] = 0;
                             daD[dex].style.backgroundColor = "rgba("+data[dex]["color"][0]+","+data[dex]["color"][1]+","+data[dex]["color"][2]+",1)";;
                             clearInterval(Events[dex]);
                         }
