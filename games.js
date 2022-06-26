@@ -4,6 +4,7 @@ document.body.onload = init;
 const content=document.getElementById("content");
 
 var daI = [];
+var daT = [];
 var daD = [];
 var daA = [];
 var Events = [];
@@ -34,19 +35,30 @@ function init(){
         newD.style.opacity = 0;
         newD.style.backgroundColor = "rgba("+data[i]["color"][0]+","+data[i]["color"][1]+","+data[i]["color"][2]+",0.5)";
         newD.style.width = "33.33333333%";
-        newD.style.paddingTop = 56.25 / 6 +"%";
-        newD.style.paddingBottom = 56.25 / 6 +"%";
+        newD.style.paddingTop = 56.25 / 3 +"%";
         newD.style.height = "0";
         newD.style.display = "block";
-        newD.textContent = data[i]["name"];
-        newD.style.color ="rgba("+data[i]["font"][0]+","+data[i]["font"][1]+","+data[i]["font"][2]+",1)";;
         newD.style.transform = "translateY(-100%)";
-        newD.style.fontSize = data[i]["size"]+"px";
         newD.style.boxSizing = "border-box";
+        var newT = document.createElement("div");
+        newT.style.position = "absolute";
+        newT.style.top = "0";
+        newT.style.left = "0";
+        newT.style.width = "100%";
+        newT.style.height = "100%";
+        newT.style.justifyContent = "center";
+        newT.style.display = "flex";
+        newT.style.alignItems = "center";
+        newT.style.lineHeight= data[i]["size"]+10+"px";
+        newT.textContent = data[i]["name"];
+        newT.style.color ="rgba("+data[i]["font"][0]+","+data[i]["font"][1]+","+data[i]["font"][2]+",1)";
+        newT.style.fontSize = data[i]["size"]+"px";
+        daT.push(newT);
         daI.push(newI);
         daD.push(newD);
         daA.push(newA);
         Events.push(null);
+        newD.appendChild(newT);
         newA.appendChild(newI);
         newA.appendChild(newD);
         content.appendChild(newA);
@@ -66,23 +78,29 @@ function fadeIn(){
             daA[i].style.opacity = 1;
             daA[i].addEventListener("mouseover",function(event) {
                 var dex = daA.indexOf(event.target);
+                if(dex == -1){dex = daT.indexOf(event.target);}
                 if(dex == -1){dex = daD.indexOf(event.target);}
                 if(dex == -1){dex = daI.indexOf(event.target);}
-                clearInterval(Events[dex]);
-                Events[dex] = setInterval(function(){
-                    daD[dex].style.opacity = parseFloat(daD[dex].style.opacity) + 0.05;
-                    if(parseFloat(daD[dex].style.opacity) >= 1){clearInterval(Events[dex]);}
-                },20);
+                if(dex != -1){
+                    clearInterval(Events[dex]);
+                    Events[dex] = setInterval(function(){
+                        daD[dex].style.opacity = parseFloat(daD[dex].style.opacity) + 0.05;
+                        if(parseFloat(daD[dex].style.opacity) >= 1){clearInterval(Events[dex]);}
+                    },20);
+                }
             });
             daA[i].addEventListener("mouseout",function(event) {
                 var dex = daA.indexOf(event.target);
+                if(dex == -1){dex = daT.indexOf(event.target);}
                 if(dex == -1){dex = daD.indexOf(event.target);}
                 if(dex == -1){dex = daI.indexOf(event.target);}
-                clearInterval(Events[dex]);
-                Events[dex] = setInterval(function(){
-                    daD[dex].style.opacity = parseFloat(daD[dex].style.opacity) - 0.05;
-                    if(parseFloat(daD[dex].style.opacity) <= 0){clearInterval(Events[dex]);}
-                },20);
+                if(dex != -1){
+                    clearInterval(Events[dex]);
+                    Events[dex] = setInterval(function(){
+                        daD[dex].style.opacity = parseFloat(daD[dex].style.opacity) - 0.05;
+                        if(parseFloat(daD[dex].style.opacity) <= 0){clearInterval(Events[dex]);}
+                    },20);
+                }
             });
             first = i;
         }
