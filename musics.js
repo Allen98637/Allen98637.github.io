@@ -178,6 +178,7 @@ function fadeIn(){
                         daB[dex].src = "sites/play.png";
                     }
                     else{
+                        daB[dex].style.opacity = 1;
                         daB[dex].src = "sites/stop.png";
                         nowPlaying = dex;
                         if(daMusic == null){
