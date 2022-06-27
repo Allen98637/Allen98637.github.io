@@ -89,21 +89,6 @@ window.addEventListener("load",function(){
     introa = setInterval(frame, 20);
     icons = document.querySelector('footer');
 
-    var op = 0;
-    function frame() {
-        if(op < 0.98){
-            op += 0.02;
-        }
-        else{
-            op = 1;
-        }
-        icons.style.opacity = op;
-        if(op == 1){
-            clearInterval(introa);
-        }
-    }
-
-
     menu2sub0 = document.getElementById("menu2sub0");
     menu2sub1 = document.getElementById("menu2sub1");
     menu2sub2 = document.getElementById("menu2sub2");
@@ -179,6 +164,22 @@ window.addEventListener("load",function(){
         }
     };
 },false);
+
+
+
+var op = 0;
+function frame() {
+    if(op < 0.98){
+        op += 0.02;
+    }
+    else{
+        op = 1;
+    }
+    icons.style.opacity = op;
+    if(op == 1){
+        clearInterval(introa);
+    }
+}
 
 var menu2subY = 0;
 function menu2subGo(){

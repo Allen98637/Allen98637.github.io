@@ -102,7 +102,7 @@ function fadeIn(){
                     },20);
                 }
             });
-            first = i;
+            first = i + 1;
         }
     }
     times += 1;

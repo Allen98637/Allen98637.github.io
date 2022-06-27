@@ -1,10 +1,10 @@
-var introa = setInterval(frame, 20);
+var introac = setInterval(cframe, 20);
 
 const textBG = document.getElementsByClassName("textBG");
 const context = document.getElementsByClassName("contaxt");
 
 var op = 0;
-function frame() {
+function cframe() {
     if(op < 0.95){
         op += 0.05;
     }
@@ -18,6 +18,6 @@ function frame() {
         context.item(i).style.opacity = op;
     }
     if(op == 1){
-        clearInterval(introa);
+        clearInterval(introac);
     }
 }
