@@ -5,7 +5,7 @@ const data =[
         "color":[0,0,0],
         "font":[255,255,0],
         "size":60,
-        "href":""
+        "href":"games/ninkmi"
     },
     {
         "name":"Friday Night Funkin' - In the Galaxy",
