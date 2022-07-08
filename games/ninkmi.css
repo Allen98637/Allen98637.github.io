@@ -5,3 +5,24 @@ body {
     background-position: center;
     background-size: cover;
 }
+
+h3.ber{
+    font-size: 60px;
+    color:blueviolet;
+}
+p.ber{
+    font-size: 30px;
+}
+.pink{
+    color:pink;
+}
+
+.black{
+    position: absolute;
+    top:100px;             
+    left:15%;
+    width:70%;
+    height:810px;
+    background-color: #00000077;
+    z-index: -1;
+}
