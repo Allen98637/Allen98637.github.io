@@ -9,11 +9,13 @@
 h1.ber{
     font-family: 'mokoto', sans-serif;
     font-size: 100px;
-    color:#aa0000;
+    /*color:#aa0000;*/
+    color:orange;
 }
 p.ber{
     font-size: 40px;
-    color:#aa0044;
+    /*color:#aa0044;*/
+    color:greenyellow;
 }
 
 #intro{
