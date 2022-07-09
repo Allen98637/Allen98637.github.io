@@ -45,6 +45,8 @@ function init(){
         newD.style.backgroundColor = "rgba(0,0,0,0.5)";
         var newT = document.createElement("h3");
         newT.textContent = data[i]["name"];
+        newT.style.overflow = "hidden";
+        newT.style.lineHeight = "50px";
         newT.style.margin = "0";
         newT.style.height = "100%";
         newT.style.fontSize = "40px";
