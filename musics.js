@@ -46,6 +46,7 @@ function init(){
         var newT = document.createElement("h3");
         newT.textContent = data[i]["name"];
         newT.style.overflow = "hidden";
+        newT.style.whiteSpace = "nowrap";
         newT.style.lineHeight = "50px";
         newT.style.margin = "0";
         newT.style.height = "100%";
