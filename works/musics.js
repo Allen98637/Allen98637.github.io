@@ -1,5 +1,13 @@
 const data = [
     {
+        "name" : "Allen98637 - Happy Day",
+        "img": "Happy_Day.png",
+        "muse" : "Happy_Day.mp3",
+        "sc" : "https://soundcloud.com/allen98637/happy-day",
+        "yt" : "https://www.youtube.com/watch?v=bh3cLrP_KXY",
+        "download" : "https://www.toneden.io/allen98637-1/post/allen98637-happy-day"
+    },
+    {
         "name" : "Allen98637 - Arphenia",
         "img": "arphenia.jpg",
         "muse" : "arphenia.mp3",
