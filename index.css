@@ -6,6 +6,8 @@
 }
 
 
+
+
 h1.ber{
     font-family: 'mokoto', sans-serif;
     font-size: 100px;
@@ -14,6 +16,16 @@ h1.ber{
 p.ber{
     font-size: 40px;
     color:#aa0044;
+}
+
+p.title{
+    font-size: 60px;
+    color:#00ff54;
+    padding-bottom: 50px;
+}
+
+.video{
+    text-align:center;
 }
 
 #intro{
