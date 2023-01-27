@@ -1,5 +1,13 @@
 const data = [
     {
+        "name" : "Allen98637 - Orkogasa",
+        "img": "orkogasa.png",
+        "muse" : "orkogasa.mp3",
+        "sc" : "https://soundcloud.com/allen98637/orkogasa",
+        "yt" : "https://youtu.be/r4vPL2wAJHI",
+        "download":"https://www.newgrounds.com/audio/listen/1190086"
+    },
+    {
         "name" : "Allen98637 - Demaposa",
         "img": "demaposa.png",
         "muse" : "demaposa.mp3",
